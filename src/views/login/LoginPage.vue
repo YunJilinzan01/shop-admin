@@ -79,7 +79,13 @@ const login = async () => {
           <!-- 用户名输入框，双向绑定 name -->
           <el-input v-model="name" placeholder="请输入用户名" prefix-icon="User" class="mb-5" />
           <!-- 密码输入框，双向绑定 password -->
-          <el-input v-model="password" placeholder="请输入密码" prefix-icon="lock" class="mb-5" />
+          <el-input
+            v-model="password"
+            placeholder="请输入密码"
+            prefix-icon="lock"
+            class="mb-5"
+            show-password
+          />
 
           <!-- 登录按钮，禁用状态由 disabled 控制，渐变背景和涟漪效果 -->
           <el-button
